@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>main</title>
+</head>
+<body>
+    <div class="header1"><h2>We're open and available for takeaway & delivery. Order Now</h2>
+        <h2 class="header11">We're open and available for <br> takeaway & delivery. Order Now</h2>
+    </div>
+    <div class="barmenu">
+        <div class="aside1"><img src="./imgs/logo.svg" alt="logo"></div>
+        <div class="aside2">
+            <label for="menu"><img class="hamb" src="./imgs/hamburgermenu.jpg" alt=""></label>
+            <input type="checkbox" id="menu">
+            <ul class="myul">
+                <a href="index.html"><li>Home</li></a>
+                <a href="#order"><li>Order</li></a>
+                <a href="#aboutus"><li>Company</li></a>
+                <a href="#faq"><li>FAQ</li></a>
+                <a href="#contactus"><li>Contact</li></a>
+                <i id="shoppingCart" class="fa fa-shopping-cart"></i>
+            </ul>
+            <ul class="myulResp">
+                <label for="menu"><img id="close" src="./imgs/close.png" alt=""></label>
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>Order</li></a>
+                <a href="#"><li>Company</li></a>
+                <a href="#"><li>FAQ</li></a>
+                <a href="#"><li>Contact</li></a>
+                <li><i id="shoppingCartSide" class="fa fa-shopping-cart"></i></li>
+            </ul>
+            
+        </div>
+        <table class="table_orders">
+            <tr>
+                <td>Burgers</td>
+                <td class="burgerCounter">0</td>
+            </tr>
+            <tr>
+                <td>Sides</td>
+                <td class="sideCounter">0</td>
+            </tr>
+            <tr>
+                <td>Drinks</td>
+                <td class="drinkCounter">0</td>
+            </tr>
+            <button id="complOrder" class="complOrder">Complete Order</button>
+        </table>
+    </div>
+    <div id="order" class="btfood">
+            <div class="btfleft">
+               <div class="in1">
+                <p>Beautiful food & takeaway, <span>delivered</span> to your door.</p>
+               </div>
+               <div class="in2">
+                <p>Lorem ipsum simply dummy text of the printing and typesetting industry.
+                    lorem ipsum has been the industry's standard dummy text ever since the 1500
+                </p>
+               </div>
+               <div class="in3">
+                <button>Place an order</button>
+               </div>
+               <div class="in4">
+                <img src="./imgs/trustpilot.png" alt="">
+                <p><span>4.8 out of 5</span> based on 2000+ reviews</p>
+               </div>
+               
+            </div>
+            <div class="btfright">
+                <img src="./imgs/beautifulfood.png" alt="">
+            </div>
+    </div>
+    <div id="aboutus" class="thehome">
+        <div class="thehome1">
+            <h1>The home of <br> fresh products</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500.</p>
+            <button class="learnbtn">Learn about us</button>
+        </div>
+        <div class="thehome2">
+            <img src="./imgs/aside2img.png" alt="image">
+        </div>
+    </div>
+    <div class="how">
+        <div class="top">
+           <p>How it works</p>
+        </div>
+        <div class="bottom">
+            <div class="n1">
+               <img src="./imgs/IMAGE (3).png" alt="">
+               <p>Adapt your menu items</p>
+               <span>Easily adapt your menu using the <br> webflow CMS and allow <br> customers to browse your items.</span>
+            </div>
+            
+            <div class="n2">
+               <img src="./imgs/IMAGE (4).png" alt="">
+               <p>Accept online orders & takeout</p>
+               <span>Let your customers order and pay <br> via the powerful ecommerce system, <br> or simple let them call your store.</span>
+            </div>
+            
+            <div class="n3">
+                 <img src="./imgs/IMAGE (5).png" alt="">
+                 <p>Manage delivery or takeout</p>
+                 <span>Manage your own logistics and <br> take orders simply through the <br> ecommerce system.</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="browmen" class="browmen">
+        <div class="browmain">
+            <div class="browmain1">
+                <h1>Browse our menu</h1>
+                <p>Use our menu to place an order online, or <a href="#contactus" style="color: #35B8BE; text-decoration: none;">phone</a> our store <br/> to place a pickup order. Fast and fresh food.</p>
+                <button id="burgBtn">Burgers</button>
+                <button id="sidBtn">Sides</button>
+                <button id="drinBtn">Drinks</button>
+            </div>
+            <div id="burgers" class="browmain2_1">
+                <div class="card">
+                    <div class="cardaside1"><img src="./imgs/card1.jpg" alt="image"></div>
+                    <div class="cardaside2">
+                        <h3>Burger Dreams</h3>
+                        <span>$ 9.20 USD</span>
+                        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                        <button class="btn1">0</button>
+                        <button class="btn2" onclick="addBurgersFunc(this)">Add to card</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardaside1"><img src="./imgs/card2.jpg" alt="image"></div>
+                    <div class="cardaside2">
+                        <h3>Burger Waldo</h3>
+                        <span>$ 10.00 USD</span>
+                        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                        <button id="plus1" class="plus">+</button>
+                        <button id="minus1" class="minus">-</button>
+                        <button class="btn1">0</button>
+                        <button class="btn2" onclick="addBurgersFunc(this)">Add to card</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardaside1"><img src="./imgs/card3.jpg" alt="image"></div>
+                    <div class="cardaside2">
+                        <h3>Burger Cali</h3>
+                        <span>$ 8.00 USD</span>
+                        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                        <button  class="plus">+</button>
+                        <button class="minus">-</button>
+                        <button class="btn1">0</button>
+                        <button class="btn2" onclick="addBurgersFunc(this)">Add to card</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardaside1"><img src="./imgs/card4.jpg" alt="image"></div>
+                    <div class="cardaside2">
+                        <h3>Burger Bacon Buddy</h3>
+                        <span>$ 9.99 USD</span>
+                        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                        <button class="btn1">0</button>
+                        <button class="btn2" onclick="addBurgersFunc(this)">Add to card</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardaside1"><img src="./imgs/card5.jpg" alt="image"></div>
+                    <div class="cardaside2">
+                        <h3>Burger Spicy</h3>
+                        <span>$ 9.20 USD</span>
+                        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                        <button  class="plus">+</button>
+                        <button class="minus">-</button>
+                        <button class="btn1">0</button>
+                        <button class="btn2" onclick="addBurgersFunc(this)">Add to card</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="cardaside1"><img src="./imgs/card6.jpg" alt="image"></div>
+                    <div class="cardaside2">
+                        <h3>Burger Classic</h3>
+                        <span>$ 8.00 USD</span>
+                        <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                        <button class="plus">+</button>
+                        <button class="minus">-</button>
+                        <button class="btn1">0</button>
+                        <button class="btn2"onclick="addBurgersFunc(this)" >Add to card</button>
+                    </div>
+                </div>
+            </div>
+            <div id="sides" class="browmain2_2">
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX6pgeG0PaCS3pZ-Kso87FWcFmtKNYx1ljBw&usqp=CAU" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Potato fries</h3>
+                            <span>$ 2.50 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addSidesFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://homecookbasics.com/wp-content/uploads/2022/01/How-to-reheat-onion-rings.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Onion rings</h3>
+                            <span>$ 1.50 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addSidesFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1526938355%2Fsmoky-grilled-corn-1807-p33.jpg%3Fitok%3DjDhz1tZB" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Grilled corn lies</h3>
+                            <span>$ 2.50 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addSidesFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://bakemesomesugar.com/wp-content/uploads/2019/02/zucchini-corn-fritters-photo-735x551.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Carrot patties</h3>
+                            <span>$ 1.49 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addSidesFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://www.wholesomeyum.com/wp-content/uploads/2021/07/wholesomeyum-Sauteed-Eggplant-10.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Sauted eggplant</h3>
+                            <span>$ 1.80 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addSidesFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://embed.widencdn.net/img/beef/t7czsycsiw/1120x840px/AdobeStock_148561805.jpeg?keep=c&u=7fueml" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Delicious sauces</h3>
+                            <span>$ 1.99 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addSidesFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+            </div>
+            <div id="drinks" class="browmain2_3">
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://marleysmenu.com/wp-content/uploads/2021/07/Butterscotch-Milkshake-Recipe-Card-Image-500x500.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Milkshake</h3>
+                            <span>$ 2.20 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addDrinksFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://seekadventuresblog.com/wp-content/uploads/2016/10/MCDCK024_bev_C_glass_fr_LgS.psd-S-1024x767.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Coca-Cola</h3>
+                            <span>$ 2.00 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addDrinksFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://cdn.britannica.com/33/206333-050-598A0208/sodas-plastic-cups-ice-straws.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Fizzy Soda</h3>
+                            <span>$ 1.50 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addDrinksFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://media.glamour.com/photos/612d343de274243a3defbc8f/4:3/w_3436,h_2577,c_limit/1225546255" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Orange Jucie</h3>
+                            <span>$ 2.20 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addDrinksFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://toriavey.com/images/2011/09/pomegranate_002.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Pomegranade Jucie</h3>
+                            <span>$ 2.20 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="plus">+</button>
+                            <button class="minus">-</button>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addDrinksFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardaside1"><img src="https://vaya.in/recipes/wp-content/uploads/2018/02/Grape-Juice.jpg" alt="image"></div>
+                        <div class="cardaside2">
+                            <h3>Grape Jucie</h3>
+                            <span>$ 2.00 USD</span>
+                            <p>Lorem Ipsum is simply dummy text of the <br> printing and typesetting industry.</p>
+                            <button class="btn1">0</button>
+                            <button class="btn2" onclick="addDrinksFunc(this)">Add to card</button>
+                        </div>
+                    </div>
+            </div>
+            <div class="browmain3">
+                <button id="fullBtn">See Full Menu</button>
+            </div>
+        </div>
+    </div>
+    <div id="faq" class="div3">
+        <div class="div3left">
+          <img src="./imgs/Frame.png" alt="">  
+        </div>
+        <div class="div3right">
+            <p>Order online with <br> our simple checkout.</p>
+            <span>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500.</span>
+            <div class="btn">
+                <button>See our FAQ</button>
+            </div>
+        </div> 
+    </div>
+    <div id="contactus" class="callour">
+            <div class="callour1">
+                <h2>Call our store and <br> takeaway when it <br> suits you best.</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and <br> typesetting industry. Lorem Ipsum has been the industry's <br> standard dummy text ever since the 1500.</p>
+                <button>Ph. +61 233 2333</button>
+            </div>
+            <div class="callour2">
+                <img src="./imgs/callour.png" alt="">
+            </div>
+    </div>
+    <div class="div4">
+        <div class="left1">
+           <img src="./imgs/IMAGE.png" alt="">
+        </div>
+        <div class="right1">
+            <div class="p1">
+                <p style="color: white;"><span style="color: #1B9097;">Support</span> good food and local business.</p>
+            </div>
+            <div class="btn">
+                <button>Order now</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footermain">
+            <div class="footerup">
+                <div class="footerup1">
+                    <img src="./imgs/logo.svg" alt="image">
+                    <span style="font-size: 16px; font-weight: 400;">Takeaway & Delivery template</span>
+                    <br>
+                    <span style="font-size: 15px; font-weight: 400;">for small - medium businesses.</span>
+                </div>
+                <div class="footerup2">
+                    <p>COMPANY</p>
+                    <a href="#">Home</a>
+                    <a href="#">Order</a>
+                    <a href="#">Faq</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footerup3">
+                    <p>TEMPLATE</p>
+                    <a href="#">Style Guide</a>
+                    <a href="#">Changelog</a>
+                    <a href="#">Licence</a>
+                    <a href="#">Webflow University</a>
+                </div>
+                <div class="footerup4">
+                    <p>FLOWBASE</p>
+                    <a href="#">More Cloneables</a>
+                </div>
+            </div>
+            <div class="footerdown">
+                <div class="footerdown1">
+                    <span>Built by <a href="#">Flowbase</a>. Powered by <a href="#">Webflow</a></span>
+                </div>
+                <div class="footerdown2">
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube-play"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./javascript/Timo.js"></script>
+</html>
